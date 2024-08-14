@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/output.css">
+
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+
+<body>
+
+  <div class="bg-primary-cream w-full h-screen flex justify-center items-center">
+    <div class="grid lg:grid-cols-2 grid-cols-1 xl:w-2/5 lg:w-3/5 w-11/12 max-w-[686px] rounded-2xl">
+      <div class="">
+        <img class="hidden lg:block rounded-bl-2xl rounded-tl-2xl" src="./images/image-product-desktop.jpg" alt="">
+        <img class="lg:hidden block rounded-tr-2xl rounded-tl-2xl" src="./images/image-product-mobile.jpg" alt="">
+      </div>
+      <div class="bg-neutral-white max-w-[686px] lg:rounded-tr-2xl rounded-bl-2xl lg:rounded-bl-none rounded-br-2xl py-7 px-6 flex flex-col justify-center">
+        <p class="mb-3 font-montserrat tracking-2 text-sm font-medium text-neutral-darkGrayishBlue">PERFUME</p>
+        <h1 class="font-fraunces text-3xl font-bold mb-3">Gabrielle Essence Eau De Parfum</h1>
+        <p class="text-sm text-neutral-darkGrayishBlue font-medium font-montserrat mb-5">
+          A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the House of
+          CHANEL
+        </p>
+        <div class="flex gap-6 items-center mb-5">
+          <h1 class="text-3xl font-fraunces font-bold text-primary-darkCyan">$149.99</h1>
+          <p class="text-sm text-neutral-darkGrayishBlue font-montserrat line-through">$169.99</p>
+        </div>
+        <button class="bg-primary-darkCyan hover:bg-neutral-veryDarkBlue transition duration-500 rounded-lg py-3 w-full flex justify-center items-center gap-2">
+          <img src="./images/icon-cart.svg" alt="">
+          <p class="text-neutral-white font-montserrat font-bold text-sm">Add to Cart</p>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
